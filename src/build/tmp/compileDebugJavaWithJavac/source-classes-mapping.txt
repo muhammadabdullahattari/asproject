@@ -1,0 +1,2 @@
+com/example/vocationdecider/BuildConfig.java
+ com.example.vocationdecider.BuildConfig

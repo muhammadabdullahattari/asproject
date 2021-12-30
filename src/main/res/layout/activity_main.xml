@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SelectedVocationTxt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/vocationimg"
+        android:layout_width="116dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vd" />
+
+    <TextView
+        android:id="@+id/selectedvocationtxt"
+        android:layout_width="176dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Fortress Stadium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#0E0E0E"
+        android:textColorHint="#48AFDD"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        app:flow_lastVerticalStyle="spread_inside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vocationimg" />
+
+    <Button
+        android:id="@+id/decidebtn"
+        android:layout_width="417dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/acme"
+        android:text="Decide!"
+        android:textColor="#1B0101"
+        android:textColorHighlight="#DFACE8"
+        android:textColorHint="#100F0F"
+        android:textColorLink="#C6C0C0"
+        android:textSize="30sp"
+        app:backgroundTint="#FBF8FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/newplctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="add a new place..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="209dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="116dp"
+        android:fontFamily="@font/adamina"
+        android:text="Add Place"
+        android:textColor="#100F0F"
+        android:textSize="18sp"
+        app:backgroundTint="#F9F5FA"
+        app:layout_constraintBottom_toTopOf="@+id/decidebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
